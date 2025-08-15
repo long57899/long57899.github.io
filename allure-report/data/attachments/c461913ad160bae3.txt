@@ -1,0 +1,179 @@
+13:50:19 [DEBUG][0m Looking for locale `en_US` in provider `faker.providers.address`.[0m
+13:50:19 [DEBUG][0m Provider `faker.providers.address` has been localized to `en_US`.[0m
+13:50:19 [DEBUG][0m Looking for locale `en_US` in provider `faker.providers.automotive`.[0m
+13:50:19 [DEBUG][0m Provider `faker.providers.automotive` has been localized to `en_US`.[0m
+13:50:19 [DEBUG][0m Looking for locale `en_US` in provider `faker.providers.bank`.[0m
+13:50:19 [DEBUG][0m Specified locale `en_US` is not available for provider `faker.providers.bank`. Locale reset to `en_GB` for this provider.[0m
+13:50:19 [DEBUG][0m Looking for locale `en_US` in provider `faker.providers.barcode`.[0m
+13:50:19 [DEBUG][0m Provider `faker.providers.barcode` has been localized to `en_US`.[0m
+13:50:19 [DEBUG][0m Looking for locale `en_US` in provider `faker.providers.color`.[0m
+13:50:19 [DEBUG][0m Provider `faker.providers.color` has been localized to `en_US`.[0m
+13:50:19 [DEBUG][0m Looking for locale `en_US` in provider `faker.providers.company`.[0m
+13:50:19 [DEBUG][0m Provider `faker.providers.company` has been localized to `en_US`.[0m
+13:50:19 [DEBUG][0m Looking for locale `en_US` in provider `faker.providers.credit_card`.[0m
+13:50:19 [DEBUG][0m Provider `faker.providers.credit_card` has been localized to `en_US`.[0m
+13:50:19 [DEBUG][0m Looking for locale `en_US` in provider `faker.providers.currency`.[0m
+13:50:19 [DEBUG][0m Provider `faker.providers.currency` has been localized to `en_US`.[0m
+13:50:19 [DEBUG][0m Looking for locale `en_US` in provider `faker.providers.date_time`.[0m
+13:50:19 [DEBUG][0m Provider `faker.providers.date_time` has been localized to `en_US`.[0m
+13:50:19 [DEBUG][0m Provider `faker.providers.doi` does not feature localization. Specified locale `en_US` is not utilized for this provider.[0m
+13:50:19 [DEBUG][0m Provider `faker.providers.emoji` does not feature localization. Specified locale `en_US` is not utilized for this provider.[0m
+13:50:19 [DEBUG][0m Provider `faker.providers.file` does not feature localization. Specified locale `en_US` is not utilized for this provider.[0m
+13:50:19 [DEBUG][0m Looking for locale `en_US` in provider `faker.providers.geo`.[0m
+13:50:19 [DEBUG][0m Provider `faker.providers.geo` has been localized to `en_US`.[0m
+13:50:19 [DEBUG][0m Looking for locale `en_US` in provider `faker.providers.internet`.[0m
+13:50:19 [DEBUG][0m Provider `faker.providers.internet` has been localized to `en_US`.[0m
+13:50:19 [DEBUG][0m Looking for locale `en_US` in provider `faker.providers.isbn`.[0m
+13:50:19 [DEBUG][0m Provider `faker.providers.isbn` has been localized to `en_US`.[0m
+13:50:19 [DEBUG][0m Looking for locale `en_US` in provider `faker.providers.job`.[0m
+13:50:19 [DEBUG][0m Provider `faker.providers.job` has been localized to `en_US`.[0m
+13:50:19 [DEBUG][0m Looking for locale `en_US` in provider `faker.providers.lorem`.[0m
+13:50:19 [DEBUG][0m Provider `faker.providers.lorem` has been localized to `en_US`.[0m
+13:50:19 [DEBUG][0m Looking for locale `en_US` in provider `faker.providers.misc`.[0m
+13:50:19 [DEBUG][0m Provider `faker.providers.misc` has been localized to `en_US`.[0m
+13:50:19 [DEBUG][0m Looking for locale `en_US` in provider `faker.providers.passport`.[0m
+13:50:19 [DEBUG][0m Provider `faker.providers.passport` has been localized to `en_US`.[0m
+13:50:19 [DEBUG][0m Looking for locale `en_US` in provider `faker.providers.person`.[0m
+13:50:19 [DEBUG][0m Provider `faker.providers.person` has been localized to `en_US`.[0m
+13:50:19 [DEBUG][0m Looking for locale `en_US` in provider `faker.providers.phone_number`.[0m
+13:50:19 [DEBUG][0m Provider `faker.providers.phone_number` has been localized to `en_US`.[0m
+13:50:19 [DEBUG][0m Provider `faker.providers.profile` does not feature localization. Specified locale `en_US` is not utilized for this provider.[0m
+13:50:19 [DEBUG][0m Provider `faker.providers.python` does not feature localization. Specified locale `en_US` is not utilized for this provider.[0m
+13:50:19 [DEBUG][0m Provider `faker.providers.sbn` does not feature localization. Specified locale `en_US` is not utilized for this provider.[0m
+13:50:19 [DEBUG][0m Looking for locale `en_US` in provider `faker.providers.ssn`.[0m
+13:50:19 [DEBUG][0m Provider `faker.providers.ssn` has been localized to `en_US`.[0m
+13:50:19 [DEBUG][0m Provider `faker.providers.user_agent` does not feature localization. Specified locale `en_US` is not utilized for this provider.[0m
+13:50:19 [DEBUG][0m Using selector: KqueueSelector[0m
+13:50:19 [DEBUG][0m Using selector: KqueueSelector[0m
+[32m13:50:19 [INFO][0m Start browser[0m
+[32m13:50:20 [INFO][0m Browser is ready[0m
+13:50:20 [DEBUG][0m Looking for locale `ru_RU` in provider `faker.providers.address`.[0m
+13:50:20 [DEBUG][0m Provider `faker.providers.address` has been localized to `ru_RU`.[0m
+13:50:20 [DEBUG][0m Looking for locale `ru_RU` in provider `faker.providers.automotive`.[0m
+13:50:20 [DEBUG][0m Provider `faker.providers.automotive` has been localized to `ru_RU`.[0m
+13:50:20 [DEBUG][0m Looking for locale `ru_RU` in provider `faker.providers.bank`.[0m
+13:50:20 [DEBUG][0m Provider `faker.providers.bank` has been localized to `ru_RU`.[0m
+13:50:20 [DEBUG][0m Looking for locale `ru_RU` in provider `faker.providers.barcode`.[0m
+13:50:20 [DEBUG][0m Specified locale `ru_RU` is not available for provider `faker.providers.barcode`. Locale reset to `en_US` for this provider.[0m
+13:50:20 [DEBUG][0m Looking for locale `ru_RU` in provider `faker.providers.color`.[0m
+13:50:20 [DEBUG][0m Provider `faker.providers.color` has been localized to `ru_RU`.[0m
+13:50:20 [DEBUG][0m Looking for locale `ru_RU` in provider `faker.providers.company`.[0m
+13:50:20 [DEBUG][0m Provider `faker.providers.company` has been localized to `ru_RU`.[0m
+13:50:20 [DEBUG][0m Looking for locale `ru_RU` in provider `faker.providers.credit_card`.[0m
+13:50:20 [DEBUG][0m Provider `faker.providers.credit_card` has been localized to `ru_RU`.[0m
+13:50:20 [DEBUG][0m Looking for locale `ru_RU` in provider `faker.providers.currency`.[0m
+13:50:20 [DEBUG][0m Provider `faker.providers.currency` has been localized to `ru_RU`.[0m
+13:50:20 [DEBUG][0m Looking for locale `ru_RU` in provider `faker.providers.date_time`.[0m
+13:50:20 [DEBUG][0m Provider `faker.providers.date_time` has been localized to `ru_RU`.[0m
+13:50:20 [DEBUG][0m Provider `faker.providers.doi` does not feature localization. Specified locale `ru_RU` is not utilized for this provider.[0m
+13:50:20 [DEBUG][0m Provider `faker.providers.emoji` does not feature localization. Specified locale `ru_RU` is not utilized for this provider.[0m
+13:50:20 [DEBUG][0m Provider `faker.providers.file` does not feature localization. Specified locale `ru_RU` is not utilized for this provider.[0m
+13:50:20 [DEBUG][0m Looking for locale `ru_RU` in provider `faker.providers.geo`.[0m
+13:50:20 [DEBUG][0m Specified locale `ru_RU` is not available for provider `faker.providers.geo`. Locale reset to `en_US` for this provider.[0m
+13:50:20 [DEBUG][0m Looking for locale `ru_RU` in provider `faker.providers.internet`.[0m
+13:50:20 [DEBUG][0m Provider `faker.providers.internet` has been localized to `ru_RU`.[0m
+13:50:20 [DEBUG][0m Looking for locale `ru_RU` in provider `faker.providers.isbn`.[0m
+13:50:20 [DEBUG][0m Specified locale `ru_RU` is not available for provider `faker.providers.isbn`. Locale reset to `en_US` for this provider.[0m
+13:50:20 [DEBUG][0m Looking for locale `ru_RU` in provider `faker.providers.job`.[0m
+13:50:20 [DEBUG][0m Provider `faker.providers.job` has been localized to `ru_RU`.[0m
+13:50:20 [DEBUG][0m Looking for locale `ru_RU` in provider `faker.providers.lorem`.[0m
+13:50:20 [DEBUG][0m Provider `faker.providers.lorem` has been localized to `ru_RU`.[0m
+13:50:20 [DEBUG][0m Looking for locale `ru_RU` in provider `faker.providers.misc`.[0m
+13:50:20 [DEBUG][0m Specified locale `ru_RU` is not available for provider `faker.providers.misc`. Locale reset to `en_US` for this provider.[0m
+13:50:20 [DEBUG][0m Looking for locale `ru_RU` in provider `faker.providers.passport`.[0m
+13:50:20 [DEBUG][0m Provider `faker.providers.passport` has been localized to `ru_RU`.[0m
+13:50:20 [DEBUG][0m Looking for locale `ru_RU` in provider `faker.providers.person`.[0m
+13:50:20 [DEBUG][0m Provider `faker.providers.person` has been localized to `ru_RU`.[0m
+13:50:20 [DEBUG][0m Looking for locale `ru_RU` in provider `faker.providers.phone_number`.[0m
+13:50:20 [DEBUG][0m Provider `faker.providers.phone_number` has been localized to `ru_RU`.[0m
+13:50:20 [DEBUG][0m Provider `faker.providers.profile` does not feature localization. Specified locale `ru_RU` is not utilized for this provider.[0m
+13:50:20 [DEBUG][0m Provider `faker.providers.python` does not feature localization. Specified locale `ru_RU` is not utilized for this provider.[0m
+13:50:20 [DEBUG][0m Provider `faker.providers.sbn` does not feature localization. Specified locale `ru_RU` is not utilized for this provider.[0m
+13:50:20 [DEBUG][0m Looking for locale `ru_RU` in provider `faker.providers.ssn`.[0m
+13:50:20 [DEBUG][0m Provider `faker.providers.ssn` has been localized to `ru_RU`.[0m
+13:50:20 [DEBUG][0m Provider `faker.providers.user_agent` does not feature localization. Specified locale `ru_RU` is not utilized for this provider.[0m
+13:50:20 [DEBUG][0m Open page https://dev.taxicrm.ru/auth/sign-in[0m
+13:50:20 [DEBUG][0m Try open url on https://dev.taxicrm.ru/auth/sign-in[0m
+13:50:20 [DEBUG][0m Getting data from arrays for further work[0m
+[32m13:50:20 [INFO][0m The process of searching for code in the database is initialized.[0m
+13:50:20 [DEBUG][0m Create connection with DB = taxicrm[0m
+[32m13:50:20 [INFO][0m The code = 114488 was found in the database. Transferring to the code is in progress.[0m
+13:50:20 [DEBUG][0m Bring page <Page url='https://dev.taxicrm.ru/auth/sign-in'> to front.[0m
+13:50:20 [DEBUG][0m wait and get element= Поле ввода номера with selector= #phone.[0m
+[32m13:50:20 [INFO][0m click element Поле ввода номера.[0m
+13:50:20 [DEBUG][0m Clear input field #phone[0m
+[32m13:50:20 [INFO][0m Entered 79241125541 into input field #phone[0m
+13:50:21 [DEBUG][0m Bring page <Page url='https://dev.taxicrm.ru/auth/sign-in'> to front.[0m
+13:50:21 [DEBUG][0m wait and get element= Поле ввода пароля with selector= #password.[0m
+[32m13:50:21 [INFO][0m click element Поле ввода пароля.[0m
+13:50:21 [DEBUG][0m Clear input field #password[0m
+[32m13:50:21 [INFO][0m Entered 12345678 into input field #password[0m
+13:50:21 [DEBUG][0m Bring page <Page url='https://dev.taxicrm.ru/auth/sign-in'> to front.[0m
+13:50:21 [DEBUG][0m wait and get element= Кнопка "Входа в проект" with selector= #checkPhone > button.[0m
+[32m13:50:21 [INFO][0m click element Кнопка "Входа в проект".[0m
+13:50:23 [DEBUG][0m Bring page <Page url='https://dev.taxicrm.ru/auth/sign-in'> to front.[0m
+13:50:23 [DEBUG][0m wait and get element= Поле ввода мобильного with selector= #code_sms.[0m
+[32m13:50:23 [INFO][0m click element Поле ввода мобильного.[0m
+13:50:23 [DEBUG][0m Clear input field #code_sms[0m
+[32m13:50:23 [INFO][0m Entered 114488 into input field #code_sms[0m
+[32m13:50:25 [INFO][0m Go to section Users[0m
+13:50:25 [DEBUG][0m Push on button = #sidebar_menu > div.menu-item.menu-item-dropdown[0m
+13:50:25 [DEBUG][0m Bring page <Page url='https://dev.taxicrm.ru/profile'> to front.[0m
+13:50:25 [DEBUG][0m wait and get element= "Кнопка "Пользователи" with selector= #sidebar_menu > div.menu-item.menu-item-dropdown.[0m
+[32m13:50:25 [INFO][0m click element "Кнопка "Пользователи".[0m
+13:50:25 [DEBUG][0m Push on button = body > div.menu-default.menu-dropdown.gap-0\.5.w-\[220px\].scrollable-y-auto.lg\:overflow-visible.max-h-\[50vh\].show > div > a[0m
+13:50:25 [DEBUG][0m Bring page <Page url='https://dev.taxicrm.ru/profile'> to front.[0m
+13:50:25 [DEBUG][0m wait and get element= Кнопка "Список пользователей" with selector= body > div.menu-default.menu-dropdown.gap-0\.5.w-\[220px\].scrollable-y-auto.lg\:overflow-visible.max-h-\[50vh\].show > div > a.[0m
+[32m13:50:25 [INFO][0m click element Кнопка "Список пользователей".[0m
+[32m13:50:26 [INFO][0m Go to page "Create User"[0m
+13:50:26 [DEBUG][0m Push on button #scrollable_content > main > div > div > div.flex.justify-end > a[0m
+13:50:26 [DEBUG][0m Bring page <Page url='https://dev.taxicrm.ru/users'> to front.[0m
+13:50:26 [DEBUG][0m wait and get element= "Кнопка "Добавить пользователя" with selector= #scrollable_content > main > div > div > div.flex.justify-end > a.[0m
+[32m13:50:26 [INFO][0m click element "Кнопка "Добавить пользователя".[0m
+[32m13:50:26 [INFO][0m Starting the user creation process[0m
+13:50:26 [DEBUG][0m Getting user data[0m
+[32m13:50:26 [INFO][0m The process of searching for code in the database is initialized.[0m
+13:50:26 [DEBUG][0m Fill in the field surname[0m
+13:50:26 [DEBUG][0m Bring page <Page url='https://dev.taxicrm.ru/users/add'> to front.[0m
+13:50:26 [DEBUG][0m wait and get element= Поле ввода фамилии with selector= #last_name.[0m
+[32m13:50:26 [INFO][0m click element Поле ввода фамилии.[0m
+13:50:26 [DEBUG][0m Clear input field #last_name[0m
+[32m13:50:26 [INFO][0m Entered Бирюков into input field #last_name[0m
+13:50:27 [DEBUG][0m Fill in the field name[0m
+13:50:27 [DEBUG][0m Bring page <Page url='https://dev.taxicrm.ru/users/add'> to front.[0m
+13:50:27 [DEBUG][0m wait and get element=  Поле ввода имени with selector= #first_name.[0m
+[32m13:50:27 [INFO][0m click element  Поле ввода имени.[0m
+13:50:27 [DEBUG][0m Clear input field #first_name[0m
+[32m13:50:27 [INFO][0m Entered Никанор into input field #first_name[0m
+13:50:27 [DEBUG][0m Fill in the field patronymic[0m
+13:50:27 [DEBUG][0m Bring page <Page url='https://dev.taxicrm.ru/users/add'> to front.[0m
+13:50:27 [DEBUG][0m wait and get element= Поле ввода отчества with selector= #middle_name.[0m
+[32m13:50:27 [INFO][0m click element Поле ввода отчества.[0m
+13:50:27 [DEBUG][0m Clear input field #middle_name[0m
+[32m13:50:27 [INFO][0m Entered Эдгарович into input field #middle_name[0m
+13:50:27 [DEBUG][0m Fill in the field phone number[0m
+13:50:27 [DEBUG][0m Bring page <Page url='https://dev.taxicrm.ru/users/add'> to front.[0m
+13:50:27 [DEBUG][0m wait and get element=  Поле ввода номера телефона with selector= #phone.[0m
+[32m13:50:27 [INFO][0m click element  Поле ввода номера телефона.[0m
+13:50:27 [DEBUG][0m Clear input field #phone[0m
+[32m13:50:27 [INFO][0m Entered +79222485088 into input field #phone[0m
+13:50:27 [DEBUG][0m Choose an option from the selection[0m
+13:50:27 [DEBUG][0m Bring page <Page url='https://dev.taxicrm.ru/users/add'> to front.[0m
+13:50:27 [DEBUG][0m wait and get element= Кастомный селектор ролей with selector= #scrollable_content > main > div > div > form > div.table-tab > div > div:nth-child(5) > div > div.[0m
+[32m13:50:27 [INFO][0m click element Кастомный селектор ролей.[0m
+13:50:27 [DEBUG][0m Bring page <Page url='https://dev.taxicrm.ru/users/add'> to front.[0m
+13:50:27 [DEBUG][0m wait and get element= Роль с индексом #role_id-opt-1 with selector= #role_id-opt-1.[0m
+[32m13:50:27 [INFO][0m click element Роль с индексом #role_id-opt-1.[0m
+13:50:27 [DEBUG][0m Push on button for create user[0m
+13:50:27 [DEBUG][0m Bring page <Page url='https://dev.taxicrm.ru/users/add'> to front.[0m
+13:50:27 [DEBUG][0m wait and get element= Кнопка "Сохранить изменения" with selector= #open_modal.[0m
+[32m13:50:27 [INFO][0m click element Кнопка "Сохранить изменения".[0m
+13:50:27 [DEBUG][0m Wait for modal = #changes_modal_user-form > div[0m
+[32m13:50:27 [INFO][0m Accept changes on modal[0m
+13:50:27 [DEBUG][0m Bring page <Page url='https://dev.taxicrm.ru/users/add'> to front.[0m
+13:50:27 [DEBUG][0m wait and get element= Кнопка подтвердить изменения with selector= #changes_modal_user-form > div > div.modal-footer.justify-end > div > button.btn.btn-success.[0m
+[32m13:50:27 [INFO][0m click element Кнопка подтвердить изменения.[0m
+13:50:28 [DEBUG][0m Create connection with DB = taxicrm[0m
+[32m13:50:28 [INFO][0m The id = 333 was found in the database. Transferring to the id is in progress.[0m
+[32m13:50:28 [INFO][0m Shutting down the browser[0m
+[32m13:50:28 [INFO][0m Resource freed[0m
