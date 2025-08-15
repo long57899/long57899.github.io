@@ -1,0 +1,179 @@
+[35mDEBUG   [0m faker.factory:factory.py:78 Looking for locale `en_US` in provider `faker.providers.address`.
+[35mDEBUG   [0m faker.factory:factory.py:97 Provider `faker.providers.address` has been localized to `en_US`.
+[35mDEBUG   [0m faker.factory:factory.py:78 Looking for locale `en_US` in provider `faker.providers.automotive`.
+[35mDEBUG   [0m faker.factory:factory.py:97 Provider `faker.providers.automotive` has been localized to `en_US`.
+[35mDEBUG   [0m faker.factory:factory.py:78 Looking for locale `en_US` in provider `faker.providers.bank`.
+[35mDEBUG   [0m faker.factory:factory.py:88 Specified locale `en_US` is not available for provider `faker.providers.bank`. Locale reset to `en_GB` for this provider.
+[35mDEBUG   [0m faker.factory:factory.py:78 Looking for locale `en_US` in provider `faker.providers.barcode`.
+[35mDEBUG   [0m faker.factory:factory.py:97 Provider `faker.providers.barcode` has been localized to `en_US`.
+[35mDEBUG   [0m faker.factory:factory.py:78 Looking for locale `en_US` in provider `faker.providers.color`.
+[35mDEBUG   [0m faker.factory:factory.py:97 Provider `faker.providers.color` has been localized to `en_US`.
+[35mDEBUG   [0m faker.factory:factory.py:78 Looking for locale `en_US` in provider `faker.providers.company`.
+[35mDEBUG   [0m faker.factory:factory.py:97 Provider `faker.providers.company` has been localized to `en_US`.
+[35mDEBUG   [0m faker.factory:factory.py:78 Looking for locale `en_US` in provider `faker.providers.credit_card`.
+[35mDEBUG   [0m faker.factory:factory.py:97 Provider `faker.providers.credit_card` has been localized to `en_US`.
+[35mDEBUG   [0m faker.factory:factory.py:78 Looking for locale `en_US` in provider `faker.providers.currency`.
+[35mDEBUG   [0m faker.factory:factory.py:97 Provider `faker.providers.currency` has been localized to `en_US`.
+[35mDEBUG   [0m faker.factory:factory.py:78 Looking for locale `en_US` in provider `faker.providers.date_time`.
+[35mDEBUG   [0m faker.factory:factory.py:97 Provider `faker.providers.date_time` has been localized to `en_US`.
+[35mDEBUG   [0m faker.factory:factory.py:108 Provider `faker.providers.doi` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+[35mDEBUG   [0m faker.factory:factory.py:108 Provider `faker.providers.emoji` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+[35mDEBUG   [0m faker.factory:factory.py:108 Provider `faker.providers.file` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+[35mDEBUG   [0m faker.factory:factory.py:78 Looking for locale `en_US` in provider `faker.providers.geo`.
+[35mDEBUG   [0m faker.factory:factory.py:97 Provider `faker.providers.geo` has been localized to `en_US`.
+[35mDEBUG   [0m faker.factory:factory.py:78 Looking for locale `en_US` in provider `faker.providers.internet`.
+[35mDEBUG   [0m faker.factory:factory.py:97 Provider `faker.providers.internet` has been localized to `en_US`.
+[35mDEBUG   [0m faker.factory:factory.py:78 Looking for locale `en_US` in provider `faker.providers.isbn`.
+[35mDEBUG   [0m faker.factory:factory.py:97 Provider `faker.providers.isbn` has been localized to `en_US`.
+[35mDEBUG   [0m faker.factory:factory.py:78 Looking for locale `en_US` in provider `faker.providers.job`.
+[35mDEBUG   [0m faker.factory:factory.py:97 Provider `faker.providers.job` has been localized to `en_US`.
+[35mDEBUG   [0m faker.factory:factory.py:78 Looking for locale `en_US` in provider `faker.providers.lorem`.
+[35mDEBUG   [0m faker.factory:factory.py:97 Provider `faker.providers.lorem` has been localized to `en_US`.
+[35mDEBUG   [0m faker.factory:factory.py:78 Looking for locale `en_US` in provider `faker.providers.misc`.
+[35mDEBUG   [0m faker.factory:factory.py:97 Provider `faker.providers.misc` has been localized to `en_US`.
+[35mDEBUG   [0m faker.factory:factory.py:78 Looking for locale `en_US` in provider `faker.providers.passport`.
+[35mDEBUG   [0m faker.factory:factory.py:97 Provider `faker.providers.passport` has been localized to `en_US`.
+[35mDEBUG   [0m faker.factory:factory.py:78 Looking for locale `en_US` in provider `faker.providers.person`.
+[35mDEBUG   [0m faker.factory:factory.py:97 Provider `faker.providers.person` has been localized to `en_US`.
+[35mDEBUG   [0m faker.factory:factory.py:78 Looking for locale `en_US` in provider `faker.providers.phone_number`.
+[35mDEBUG   [0m faker.factory:factory.py:97 Provider `faker.providers.phone_number` has been localized to `en_US`.
+[35mDEBUG   [0m faker.factory:factory.py:108 Provider `faker.providers.profile` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+[35mDEBUG   [0m faker.factory:factory.py:108 Provider `faker.providers.python` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+[35mDEBUG   [0m faker.factory:factory.py:108 Provider `faker.providers.sbn` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+[35mDEBUG   [0m faker.factory:factory.py:78 Looking for locale `en_US` in provider `faker.providers.ssn`.
+[35mDEBUG   [0m faker.factory:factory.py:97 Provider `faker.providers.ssn` has been localized to `en_US`.
+[35mDEBUG   [0m faker.factory:factory.py:108 Provider `faker.providers.user_agent` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+[35mDEBUG   [0m asyncio:selector_events.py:64 Using selector: KqueueSelector
+[35mDEBUG   [0m asyncio:selector_events.py:64 Using selector: KqueueSelector
+[32mINFO    [0m root:conftest.py:136 Start browser
+[32mINFO    [0m root:conftest.py:141 Browser is ready
+[35mDEBUG   [0m faker.factory:factory.py:78 Looking for locale `ru_RU` in provider `faker.providers.address`.
+[35mDEBUG   [0m faker.factory:factory.py:97 Provider `faker.providers.address` has been localized to `ru_RU`.
+[35mDEBUG   [0m faker.factory:factory.py:78 Looking for locale `ru_RU` in provider `faker.providers.automotive`.
+[35mDEBUG   [0m faker.factory:factory.py:97 Provider `faker.providers.automotive` has been localized to `ru_RU`.
+[35mDEBUG   [0m faker.factory:factory.py:78 Looking for locale `ru_RU` in provider `faker.providers.bank`.
+[35mDEBUG   [0m faker.factory:factory.py:97 Provider `faker.providers.bank` has been localized to `ru_RU`.
+[35mDEBUG   [0m faker.factory:factory.py:78 Looking for locale `ru_RU` in provider `faker.providers.barcode`.
+[35mDEBUG   [0m faker.factory:factory.py:88 Specified locale `ru_RU` is not available for provider `faker.providers.barcode`. Locale reset to `en_US` for this provider.
+[35mDEBUG   [0m faker.factory:factory.py:78 Looking for locale `ru_RU` in provider `faker.providers.color`.
+[35mDEBUG   [0m faker.factory:factory.py:97 Provider `faker.providers.color` has been localized to `ru_RU`.
+[35mDEBUG   [0m faker.factory:factory.py:78 Looking for locale `ru_RU` in provider `faker.providers.company`.
+[35mDEBUG   [0m faker.factory:factory.py:97 Provider `faker.providers.company` has been localized to `ru_RU`.
+[35mDEBUG   [0m faker.factory:factory.py:78 Looking for locale `ru_RU` in provider `faker.providers.credit_card`.
+[35mDEBUG   [0m faker.factory:factory.py:97 Provider `faker.providers.credit_card` has been localized to `ru_RU`.
+[35mDEBUG   [0m faker.factory:factory.py:78 Looking for locale `ru_RU` in provider `faker.providers.currency`.
+[35mDEBUG   [0m faker.factory:factory.py:97 Provider `faker.providers.currency` has been localized to `ru_RU`.
+[35mDEBUG   [0m faker.factory:factory.py:78 Looking for locale `ru_RU` in provider `faker.providers.date_time`.
+[35mDEBUG   [0m faker.factory:factory.py:97 Provider `faker.providers.date_time` has been localized to `ru_RU`.
+[35mDEBUG   [0m faker.factory:factory.py:108 Provider `faker.providers.doi` does not feature localization. Specified locale `ru_RU` is not utilized for this provider.
+[35mDEBUG   [0m faker.factory:factory.py:108 Provider `faker.providers.emoji` does not feature localization. Specified locale `ru_RU` is not utilized for this provider.
+[35mDEBUG   [0m faker.factory:factory.py:108 Provider `faker.providers.file` does not feature localization. Specified locale `ru_RU` is not utilized for this provider.
+[35mDEBUG   [0m faker.factory:factory.py:78 Looking for locale `ru_RU` in provider `faker.providers.geo`.
+[35mDEBUG   [0m faker.factory:factory.py:88 Specified locale `ru_RU` is not available for provider `faker.providers.geo`. Locale reset to `en_US` for this provider.
+[35mDEBUG   [0m faker.factory:factory.py:78 Looking for locale `ru_RU` in provider `faker.providers.internet`.
+[35mDEBUG   [0m faker.factory:factory.py:97 Provider `faker.providers.internet` has been localized to `ru_RU`.
+[35mDEBUG   [0m faker.factory:factory.py:78 Looking for locale `ru_RU` in provider `faker.providers.isbn`.
+[35mDEBUG   [0m faker.factory:factory.py:88 Specified locale `ru_RU` is not available for provider `faker.providers.isbn`. Locale reset to `en_US` for this provider.
+[35mDEBUG   [0m faker.factory:factory.py:78 Looking for locale `ru_RU` in provider `faker.providers.job`.
+[35mDEBUG   [0m faker.factory:factory.py:97 Provider `faker.providers.job` has been localized to `ru_RU`.
+[35mDEBUG   [0m faker.factory:factory.py:78 Looking for locale `ru_RU` in provider `faker.providers.lorem`.
+[35mDEBUG   [0m faker.factory:factory.py:97 Provider `faker.providers.lorem` has been localized to `ru_RU`.
+[35mDEBUG   [0m faker.factory:factory.py:78 Looking for locale `ru_RU` in provider `faker.providers.misc`.
+[35mDEBUG   [0m faker.factory:factory.py:88 Specified locale `ru_RU` is not available for provider `faker.providers.misc`. Locale reset to `en_US` for this provider.
+[35mDEBUG   [0m faker.factory:factory.py:78 Looking for locale `ru_RU` in provider `faker.providers.passport`.
+[35mDEBUG   [0m faker.factory:factory.py:97 Provider `faker.providers.passport` has been localized to `ru_RU`.
+[35mDEBUG   [0m faker.factory:factory.py:78 Looking for locale `ru_RU` in provider `faker.providers.person`.
+[35mDEBUG   [0m faker.factory:factory.py:97 Provider `faker.providers.person` has been localized to `ru_RU`.
+[35mDEBUG   [0m faker.factory:factory.py:78 Looking for locale `ru_RU` in provider `faker.providers.phone_number`.
+[35mDEBUG   [0m faker.factory:factory.py:97 Provider `faker.providers.phone_number` has been localized to `ru_RU`.
+[35mDEBUG   [0m faker.factory:factory.py:108 Provider `faker.providers.profile` does not feature localization. Specified locale `ru_RU` is not utilized for this provider.
+[35mDEBUG   [0m faker.factory:factory.py:108 Provider `faker.providers.python` does not feature localization. Specified locale `ru_RU` is not utilized for this provider.
+[35mDEBUG   [0m faker.factory:factory.py:108 Provider `faker.providers.sbn` does not feature localization. Specified locale `ru_RU` is not utilized for this provider.
+[35mDEBUG   [0m faker.factory:factory.py:78 Looking for locale `ru_RU` in provider `faker.providers.ssn`.
+[35mDEBUG   [0m faker.factory:factory.py:97 Provider `faker.providers.ssn` has been localized to `ru_RU`.
+[35mDEBUG   [0m faker.factory:factory.py:108 Provider `faker.providers.user_agent` does not feature localization. Specified locale `ru_RU` is not utilized for this provider.
+[35mDEBUG   [0m root:login.py:25 Open page https://dev.taxicrm.ru/auth/sign-in
+[35mDEBUG   [0m root:BaseFunction.py:80 Try open url on https://dev.taxicrm.ru/auth/sign-in
+[35mDEBUG   [0m root:login.py:52 Getting data from arrays for further work
+[32mINFO    [0m root:database.py:10 The process of searching for code in the database is initialized.
+[35mDEBUG   [0m root:database.py:24 Create connection with DB = taxicrm
+[32mINFO    [0m root:database.py:53 The code = 114488 was found in the database. Transferring to the code is in progress.
+[35mDEBUG   [0m root:BaseFunction.py:11 Bring page <Page url='https://dev.taxicrm.ru/auth/sign-in'> to front.
+[35mDEBUG   [0m root:BaseFunction.py:14 wait and get element= Поле ввода номера with selector= #phone.
+[32mINFO    [0m root:BaseFunction.py:19 click element Поле ввода номера.
+[35mDEBUG   [0m root:BaseFunction.py:32 Clear input field #phone
+[32mINFO    [0m root:BaseFunction.py:35 Entered 79241125541 into input field #phone
+[35mDEBUG   [0m root:BaseFunction.py:11 Bring page <Page url='https://dev.taxicrm.ru/auth/sign-in'> to front.
+[35mDEBUG   [0m root:BaseFunction.py:14 wait and get element= Поле ввода пароля with selector= #password.
+[32mINFO    [0m root:BaseFunction.py:19 click element Поле ввода пароля.
+[35mDEBUG   [0m root:BaseFunction.py:32 Clear input field #password
+[32mINFO    [0m root:BaseFunction.py:35 Entered 12345678 into input field #password
+[35mDEBUG   [0m root:BaseFunction.py:11 Bring page <Page url='https://dev.taxicrm.ru/auth/sign-in'> to front.
+[35mDEBUG   [0m root:BaseFunction.py:14 wait and get element= Кнопка "Входа в проект" with selector= #checkPhone > button.
+[32mINFO    [0m root:BaseFunction.py:19 click element Кнопка "Входа в проект".
+[35mDEBUG   [0m root:BaseFunction.py:11 Bring page <Page url='https://dev.taxicrm.ru/auth/sign-in'> to front.
+[35mDEBUG   [0m root:BaseFunction.py:14 wait and get element= Поле ввода мобильного with selector= #code_sms.
+[32mINFO    [0m root:BaseFunction.py:19 click element Поле ввода мобильного.
+[35mDEBUG   [0m root:BaseFunction.py:32 Clear input field #code_sms
+[32mINFO    [0m root:BaseFunction.py:35 Entered 114488 into input field #code_sms
+[32mINFO    [0m root:sidebar.py:16 Go to section Users
+[35mDEBUG   [0m root:sidebar.py:18 Push on button = #sidebar_menu > div.menu-item.menu-item-dropdown
+[35mDEBUG   [0m root:BaseFunction.py:11 Bring page <Page url='https://dev.taxicrm.ru/profile'> to front.
+[35mDEBUG   [0m root:BaseFunction.py:14 wait and get element= "Кнопка "Пользователи" with selector= #sidebar_menu > div.menu-item.menu-item-dropdown.
+[32mINFO    [0m root:BaseFunction.py:19 click element "Кнопка "Пользователи".
+[35mDEBUG   [0m root:sidebar.py:22 Push on button = body > div.menu-default.menu-dropdown.gap-0\.5.w-\[220px\].scrollable-y-auto.lg\:overflow-visible.max-h-\[50vh\].show > div > a
+[35mDEBUG   [0m root:BaseFunction.py:11 Bring page <Page url='https://dev.taxicrm.ru/profile'> to front.
+[35mDEBUG   [0m root:BaseFunction.py:14 wait and get element= Кнопка "Список пользователей" with selector= body > div.menu-default.menu-dropdown.gap-0\.5.w-\[220px\].scrollable-y-auto.lg\:overflow-visible.max-h-\[50vh\].show > div > a.
+[32mINFO    [0m root:BaseFunction.py:19 click element Кнопка "Список пользователей".
+[32mINFO    [0m root:users_list.py:17 Go to page "Create User"
+[35mDEBUG   [0m root:users_list.py:19 Push on button #scrollable_content > main > div > div > div.flex.justify-end > a
+[35mDEBUG   [0m root:BaseFunction.py:11 Bring page <Page url='https://dev.taxicrm.ru/users'> to front.
+[35mDEBUG   [0m root:BaseFunction.py:14 wait and get element= "Кнопка "Добавить пользователя" with selector= #scrollable_content > main > div > div > div.flex.justify-end > a.
+[32mINFO    [0m root:BaseFunction.py:19 click element "Кнопка "Добавить пользователя".
+[32mINFO    [0m root:add_user.py:24 Starting the user creation process
+[35mDEBUG   [0m root:add_user.py:26 Getting user data
+[32mINFO    [0m root:database.py:10 The process of searching for code in the database is initialized.
+[35mDEBUG   [0m root:add_user.py:36 Fill in the field surname
+[35mDEBUG   [0m root:BaseFunction.py:11 Bring page <Page url='https://dev.taxicrm.ru/users/add'> to front.
+[35mDEBUG   [0m root:BaseFunction.py:14 wait and get element= Поле ввода фамилии with selector= #last_name.
+[32mINFO    [0m root:BaseFunction.py:19 click element Поле ввода фамилии.
+[35mDEBUG   [0m root:BaseFunction.py:32 Clear input field #last_name
+[32mINFO    [0m root:BaseFunction.py:35 Entered Бирюков into input field #last_name
+[35mDEBUG   [0m root:add_user.py:40 Fill in the field name
+[35mDEBUG   [0m root:BaseFunction.py:11 Bring page <Page url='https://dev.taxicrm.ru/users/add'> to front.
+[35mDEBUG   [0m root:BaseFunction.py:14 wait and get element=  Поле ввода имени with selector= #first_name.
+[32mINFO    [0m root:BaseFunction.py:19 click element  Поле ввода имени.
+[35mDEBUG   [0m root:BaseFunction.py:32 Clear input field #first_name
+[32mINFO    [0m root:BaseFunction.py:35 Entered Никанор into input field #first_name
+[35mDEBUG   [0m root:add_user.py:44 Fill in the field patronymic
+[35mDEBUG   [0m root:BaseFunction.py:11 Bring page <Page url='https://dev.taxicrm.ru/users/add'> to front.
+[35mDEBUG   [0m root:BaseFunction.py:14 wait and get element= Поле ввода отчества with selector= #middle_name.
+[32mINFO    [0m root:BaseFunction.py:19 click element Поле ввода отчества.
+[35mDEBUG   [0m root:BaseFunction.py:32 Clear input field #middle_name
+[32mINFO    [0m root:BaseFunction.py:35 Entered Эдгарович into input field #middle_name
+[35mDEBUG   [0m root:add_user.py:48 Fill in the field phone number
+[35mDEBUG   [0m root:BaseFunction.py:11 Bring page <Page url='https://dev.taxicrm.ru/users/add'> to front.
+[35mDEBUG   [0m root:BaseFunction.py:14 wait and get element=  Поле ввода номера телефона with selector= #phone.
+[32mINFO    [0m root:BaseFunction.py:19 click element  Поле ввода номера телефона.
+[35mDEBUG   [0m root:BaseFunction.py:32 Clear input field #phone
+[32mINFO    [0m root:BaseFunction.py:35 Entered +79222485088 into input field #phone
+[35mDEBUG   [0m root:add_user.py:52 Choose an option from the selection
+[35mDEBUG   [0m root:BaseFunction.py:11 Bring page <Page url='https://dev.taxicrm.ru/users/add'> to front.
+[35mDEBUG   [0m root:BaseFunction.py:14 wait and get element= Кастомный селектор ролей with selector= #scrollable_content > main > div > div > form > div.table-tab > div > div:nth-child(5) > div > div.
+[32mINFO    [0m root:BaseFunction.py:19 click element Кастомный селектор ролей.
+[35mDEBUG   [0m root:BaseFunction.py:11 Bring page <Page url='https://dev.taxicrm.ru/users/add'> to front.
+[35mDEBUG   [0m root:BaseFunction.py:14 wait and get element= Роль с индексом #role_id-opt-1 with selector= #role_id-opt-1.
+[32mINFO    [0m root:BaseFunction.py:19 click element Роль с индексом #role_id-opt-1.
+[35mDEBUG   [0m root:add_user.py:57 Push on button for create user
+[35mDEBUG   [0m root:BaseFunction.py:11 Bring page <Page url='https://dev.taxicrm.ru/users/add'> to front.
+[35mDEBUG   [0m root:BaseFunction.py:14 wait and get element= Кнопка "Сохранить изменения" with selector= #open_modal.
+[32mINFO    [0m root:BaseFunction.py:19 click element Кнопка "Сохранить изменения".
+[35mDEBUG   [0m root:add_user.py:61 Wait for modal = #changes_modal_user-form > div
+[32mINFO    [0m root:add_user.py:63 Accept changes on modal
+[35mDEBUG   [0m root:BaseFunction.py:11 Bring page <Page url='https://dev.taxicrm.ru/users/add'> to front.
+[35mDEBUG   [0m root:BaseFunction.py:14 wait and get element= Кнопка подтвердить изменения with selector= #changes_modal_user-form > div > div.modal-footer.justify-end > div > button.btn.btn-success.
+[32mINFO    [0m root:BaseFunction.py:19 click element Кнопка подтвердить изменения.
+[35mDEBUG   [0m root:database.py:24 Create connection with DB = taxicrm
+[32mINFO    [0m root:database.py:76 The id = 333 was found in the database. Transferring to the id is in progress.
+[32mINFO    [0m root:conftest.py:144 Shutting down the browser
+[32mINFO    [0m root:conftest.py:148 Resource freed
