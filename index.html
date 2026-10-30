@@ -5,129 +5,236 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Leonid Li — QA Automation Engineer · moving into AI testing</title>
 <meta name="description" content="QA Automation Engineer with hands-on experience across fintech, payments and CRM/ERP products, setting up QA processes and test frameworks on each product. Buil"><link rel="alternate" hreflang="ru" href="ru/"><style>
-/* латиница и кириллица — разными семействами: под одним именем WeasyPrint склеивает
-   файлы в один шрифт PDF и путает символы */
-@font-face { font-family: "OnestLat"; font-weight: 400; src: url("assets/fonts/onest-latin-400-normal.woff2") format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
-@font-face { font-family: "OnestCyr"; font-weight: 400; src: url("assets/fonts/onest-cyrillic-400-normal.woff2") format("woff2"); unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116; }
-@font-face { font-family: "OnestLat"; font-weight: 600; src: url("assets/fonts/onest-latin-600-normal.woff2") format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
-@font-face { font-family: "OnestCyr"; font-weight: 600; src: url("assets/fonts/onest-cyrillic-600-normal.woff2") format("woff2"); unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116; }
-@font-face { font-family: "UnboundedLat"; font-weight: 600; src: url("assets/fonts/unbounded-latin-600-normal.woff2") format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
-@font-face { font-family: "UnboundedCyr"; font-weight: 600; src: url("assets/fonts/unbounded-cyrillic-600-normal.woff2") format("woff2"); unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116; }
+@font-face { font-family: "Onest"; font-weight: 400; font-display: swap; src: url("assets/fonts/onest-latin-400-normal.woff2") format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+20AC, U+2122, U+2190-2199, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: "Onest"; font-weight: 400; font-display: swap; src: url("assets/fonts/onest-cyrillic-400-normal.woff2") format("woff2"); unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116; }
+@font-face { font-family: "Onest"; font-weight: 600; font-display: swap; src: url("assets/fonts/onest-latin-600-normal.woff2") format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+20AC, U+2122, U+2190-2199, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: "Onest"; font-weight: 600; font-display: swap; src: url("assets/fonts/onest-cyrillic-600-normal.woff2") format("woff2"); unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116; }
+@font-face { font-family: "Unbounded"; font-weight: 600; font-display: swap; src: url("assets/fonts/unbounded-latin-600-normal.woff2") format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+20AC, U+2122, U+2190-2199, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: "Unbounded"; font-weight: 600; font-display: swap; src: url("assets/fonts/unbounded-cyrillic-600-normal.woff2") format("woff2"); unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116; }
 
 :root {
-  --bg: #ffffff;
-  --ink: #1c211e;
-  --ink-2: #4a524d;
-  --muted: #6b736d;
-  --line: #dde0d6;
-  --accent: #d9542b;
-  --moss: #3e7c59;
-  --chip: #e3eee6;
-  --chip-ink: #24513a;
-  --display: UnboundedLat, UnboundedCyr, OnestLat, OnestCyr, sans-serif;
+  --bg: #f3f4ef; --surface: #ffffff; --ink: #1c211e; --ink-2: #4a524d; --muted: #6b736d;
+  --line: #dde0d6; --line-2: #cbd0c3; --accent: #d9542b; --accent-strong: #b8461f; --on-accent: #ffffff;
+  --moss: #3e7c59; --trail: #e6e0cf; --ahead: #9aa394;
+  --deep: #1c211e; --deep-ink: #f3f4ef; --deep-2: #b6beb5; --deep-muted: #8e978e; --deep-line: #3b443e;
+  --display: "Unbounded", "Onest", system-ui, sans-serif; --mono: ui-monospace, "SFMono-Regular", Menlo, monospace;
   color-scheme: light;
 }
 @media (prefers-color-scheme: dark) {
-  :root { --bg: #121614; --ink: #e8ece6; --ink-2: #b6beb5; --muted: #8e978e; --line: #2c332e; --accent: #e8693e; --moss: #62ab80; --chip: #1e3227; --chip-ink: #a9d9ba; color-scheme: dark; }
+  :root { --bg: #121614; --surface: #1a1f1c; --ink: #e8ece6; --ink-2: #b6beb5; --muted: #8e978e;
+    --line: #2c332e; --line-2: #3b443e; --accent: #e8693e; --accent-strong: #c4532c;
+    --moss: #62ab80; --trail: #2b302b; --ahead: #5e675f;
+    --deep: #222a25; --deep-ink: #e8ece6; --deep-2: #b6beb5; --deep-muted: #8e978e; --deep-line: #3b443e;
+    color-scheme: dark; }
 }
-@page { size: A4; margin: 16mm 16mm 18mm; }
+
 * { box-sizing: border-box; }
-body { margin: 0; background: var(--bg); color: var(--ink); font: 400 10.5pt/1.5 OnestLat, OnestCyr, system-ui, sans-serif; }
-main { max-width: 780px; margin: 0 auto; padding: 40px 20px 56px; }
-main > :not(:first-child) { margin-top: 22px; }
-header > :not(:first-child) { margin-top: 6px; }
-header { padding-bottom: 14px; border-bottom: 1px solid var(--line); }
-h1 { margin: 0; font: 600 24pt/1.1 var(--display); letter-spacing: -0.01em; }
-.headline { font-size: 12pt; color: var(--ink-2); }
-.contacts { display: flex; flex-wrap: wrap; gap: 4px 16px; font-size: 9.5pt; color: var(--ink-2); }
-.contacts a { color: inherit; }
-.lang { display: inline-block; font-size: 9.5pt; color: var(--accent); }
-section { break-inside: auto; }
-section > :not(:first-child) { margin-top: 10px; }
-h2 { margin: 0; font-size: 8.5pt; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); }
-p { margin: 0; }
-.job { break-inside: avoid; padding-bottom: 6px; }
-.job > :not(:first-child) { margin-top: 4px; }
-.job-head { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 2px 12px; }
-.job-title { font-weight: 600; }
-.job-company { color: var(--ink-2); }
-.job-period { color: var(--muted); font-size: 9.5pt; font-variant-numeric: tabular-nums; white-space: nowrap; }
-ul { margin: 2px 0 0; padding-left: 18px; }
-li + li { margin-top: 2px; }
-li::marker { color: var(--moss); }
-.skills > :not(:first-child) { margin-top: 8px; }
-.group { break-inside: avoid; }
-.group > :not(:first-child) { margin-top: 4px; }
-.group-name { font-size: 9.5pt; font-weight: 600; }
-.chips { display: flex; flex-wrap: wrap; gap: 4px; }
-.chip { padding: 1px 8px; border-radius: 999px; background: var(--chip); color: var(--chip-ink); font-size: 9.5pt; }
-.extra { white-space: pre-line; }
+html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+body { margin: 0; background: var(--bg); color: var(--ink); font: 400 16px/1.6 "Onest", system-ui, -apple-system, "Segoe UI", sans-serif; }
+a { color: var(--accent); }
+a:focus-visible, .btn:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+h1, h2, h3 { text-wrap: balance; }
+.wrap { max-width: 1120px; margin: 0 auto; padding: 24px 20px 72px; display: flex; flex-direction: column; gap: 72px; }
+
+/* навигация */
+nav { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px 20px; }
+.brand { display: inline-flex; align-items: center; gap: 10px; color: var(--ink); text-decoration: none; font: 600 15px/1 var(--display); }
+.links { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 18px; font-size: 15px; }
+.links > a { color: var(--ink-2); text-decoration: none; }
+.links > a:hover { color: var(--ink); }
+.lang { display: inline-flex; border: 1px solid var(--line-2, var(--line)); border-radius: 999px; overflow: hidden; font-size: 13px; }
+.lang a, .lang span { padding: 6px 12px; text-decoration: none; color: var(--ink); }
+.lang .on { background: var(--ink); color: var(--bg); font-weight: 600; }
+
+/* первый экран */
+.hero { display: flex; flex-wrap: wrap; gap: 40px; align-items: stretch; }
+.hero-text { flex: 999 1 520px; min-width: 0; display: flex; flex-direction: column; justify-content: center; gap: 24px; }
+.eyebrow { margin: 0; font-size: 13px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); }
+h1 { margin: 0; font: 600 clamp(48px, 9vw, 84px)/0.98 var(--display); letter-spacing: -0.02em; }
+.lead { margin: 0; max-width: 620px; font-size: clamp(17px, 2.2vw, 20px); line-height: 1.5; color: var(--ink-2); }
+.pills { display: flex; flex-wrap: wrap; gap: 10px; }
+.btn { display: inline-flex; align-items: center; min-height: 44px; padding: 0 18px; border-radius: 999px; border: 1px solid var(--line-2, var(--line)); color: var(--ink); text-decoration: none; overflow-wrap: anywhere; }
+.btn.primary { background: var(--ink); border-color: var(--ink); color: var(--bg); font-weight: 600; }
+.btn.plain { border-color: transparent; color: var(--muted); padding: 0 4px; }
+
+.card { flex: 1 1 320px; max-width: 400px; background: var(--deep); color: var(--deep-ink); border-radius: 28px; padding: 28px; display: flex; flex-direction: column; gap: 22px; }
+.who { display: flex; align-items: center; gap: 14px; }
+.avatar { width: 56px; height: 56px; flex-shrink: 0; border-radius: 18px; background: var(--accent); color: var(--deep); display: flex; align-items: center; justify-content: center; font: 600 20px/1 var(--display); }
+.who b { display: block; font-size: 17px; }
+.who span { font-size: 14px; color: var(--deep-2); }
+.card .stack { display: flex; flex-direction: column; gap: 10px; font-size: 15px; }
+.card .btn { border-radius: 14px; border-color: var(--deep-line); color: var(--deep-ink); }
+.card .btn.primary { background: var(--accent-strong); border-color: var(--accent-strong); color: var(--on-accent); }
+.card .extra { border-top: 1px solid var(--deep-line); padding-top: 16px; font-size: 13.5px; color: var(--deep-2); white-space: pre-line; }
+
+/* тропа */
+.path { background: var(--surface); border: 1px solid var(--line); border-radius: 28px; padding: 32px 28px 24px; }
+.path svg { width: 100%; height: auto; display: block; }
+.stops { display: grid; gap: 12px; margin-top: 10px; font-size: 14px; }
+.stops div { min-width: 0; text-align: center; }
+.stops div:first-child { text-align: left; }
+.stops div:last-child { text-align: right; }
+.stops b { display: block; }
+.stops span { color: var(--muted); }
+.stops .now b { color: var(--accent-strong); }
+
+/* цифры */
+.numbers { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; }
+.numbers div { border-top: 2px solid var(--ink); padding-top: 14px; }
+.numbers b { display: block; font: 600 clamp(26px, 3.4vw, 40px)/1.15 var(--display); white-space: nowrap; }
+.numbers span { color: var(--ink-2); }
+
+/* разделы */
+section { display: flex; flex-direction: column; gap: 22px; }
+h2 { margin: 0; font: 600 32px/1.2 var(--display); }
+.grid2 { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+.project { background: var(--surface); border: 1px solid var(--line); border-radius: 24px; padding: 26px; display: flex; flex-direction: column; gap: 10px; min-width: 0; }
+.project h3 { margin: 0; font: 600 22px/1.25 var(--display); }
+.project h3 a { color: inherit; }
+.project p { margin: 0; color: var(--ink-2); }
+.project .tech { font-size: 14px; color: var(--muted); }
+.project.featured { grid-column: 1 / -1; background: var(--deep); border-color: var(--deep); color: var(--deep-ink); padding: 32px; }
+.project.featured h3 { font-size: 28px; }
+.project.featured p { color: var(--deep-2); }
+.project.featured .tech { color: var(--deep-muted); }
+.note { margin: 0; font-size: 14px; color: var(--muted); }
+
+.timeline { display: flex; flex-direction: column; border-left: 3px dashed var(--trail); margin-left: 8px; }
+.job { position: relative; padding: 0 0 30px 30px; display: flex; flex-direction: column; gap: 6px; }
+.job:last-child { padding-bottom: 0; }
+.job::before { content: ""; position: absolute; left: -11px; top: 5px; width: 18px; height: 18px; border-radius: 50%; background: var(--moss); }
+.job:first-child::before { background: var(--accent); }
+.job-head { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 4px 12px; }
+.job h3 { margin: 0; font-size: 19px; line-height: 1.35; }
+.job .when { color: var(--muted); white-space: nowrap; }
+.job p { margin: 0; color: var(--ink-2); }
+.job ul { margin: 4px 0 0; padding-left: 20px; color: var(--ink-2); }
+.job li + li { margin-top: 4px; }
+.job li::marker { color: var(--moss); }
+
+.skills { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 24px; }
+.skills h3 { margin: 0 0 6px; font-size: 15px; }
+.skills p { margin: 0; color: var(--ink-2); }
+.plain-list { margin: 0; padding-left: 20px; color: var(--ink-2); }
+.extra-block { margin: 0; color: var(--ink-2); white-space: pre-line; }
+
+footer { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; padding-top: 24px; border-top: 1px solid var(--line); font-size: 14px; color: var(--muted); }
+
+
+@media (max-width: 720px) {
+  .wrap { gap: 56px; }
+  .grid2 { grid-template-columns: minmax(0, 1fr); }
+  .card, .report { max-width: none; }
+  .stops { font-size: 12.5px; }
+  .stops span { display: none; }
+}
 </style>
 </head>
-<body>
-<main>
-  <header>
-    <h1>Leonid Li</h1>
-<div class="headline">QA Automation Engineer · moving into AI testing</div>    <div class="contacts">
-<span>Remote · open to relocation</span><a href="mailto:57899@mail.ru">57899@mail.ru</a><a href="https://github.com/long57899">GitHub</a><a href="https://t.me/long57899">Telegram</a>    </div>
-<a class="lang" href="ru/">Русская версия</a>  </header>
+<body class="theme-card">
+<div class="wrap">
 
-  <section>
-    <h2>About</h2>
-    <p>QA Automation Engineer with hands-on experience across fintech, payments and CRM/ERP products, setting up QA processes and test frameworks on each product. Builds regression suites in Python with pytest and Playwright (async), covers API testing and verifies final data state in SQL, and runs everything in GitLab CI with Allure reporting. Combines automation with technical leadership: interviewing, hiring and onboarding QA engineers. Moving toward AI testing and AI-driven test automation.</p>
-  </section>
+<nav aria-label="Contacts">
+  <a class="brand" href="#top">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--accent)" aria-hidden="true"><path d="M12 22s7-6.3 7-12a7 7 0 1 0-14 0c0 5.7 7 12 7 12z"></path><circle cx="12" cy="10" r="2.5"></circle></svg>
+    Leonid Li
+  </a>
+  <div class="links">
+<a href="#projects">My projects</a><a href="#work">Experience</a><a href="#skills">Skills</a>    <span class="lang">
+<span class="on" aria-current="page">EN</span><a href="ru/" hreflang="ru" lang="ru">RU</a>
+    </span>
+  </div>
+</nav>
 
-  <section>
-    <h2>Experience</h2>
-    <div class="job">
-      <div class="job-head">
-        <span><span class="job-title">QA Automation Engineer (Fullstack AQA)</span> <span class="job-company">· Nevasoft LLC</span></span>
-<span class="job-period">2025 — present</span>      </div>
-<p>Project: CRM/ERP system for taxi fleets — web and a native mobile app (Laravel, Livewire, MySQL, Redis, Kafka). Rebuilt the QA process and the regression framework.</p><ul><li>Designed a regression framework (Python, pytest, Playwright async, 4-layer Page Object): 400+ UI and API tests, each checking both the UI and the final database state; regression time dropped by 35–40%.</li><li>Automated payouts (SBP/card, integrations with several banks), financial reporting and the public API: ~89% coverage of critical scenarios with releases 1–3 times a week.</li><li>Caught critical money defects before production: duplicate charges when the connection to the payment service dropped and a missed recalculation when a background job failed on large volumes.</li><li>Set up GitLab CI runs with Allure and automatic failure diagnostics (screenshot, HTML, Playwright trace, app log) and isolated parallel QA environments (git worktree + Docker Compose).</li><li>Interviewed and hired a QA Middle and a QA Lead and onboarded 4 new employees: system training, growth plans, reviews of their work.</li></ul>    </div>
-    <div class="job">
-      <div class="job-head">
-        <span><span class="job-title">QA Automation Engineer (Fullstack AQA)</span> <span class="job-company">· Nevasoft LLC</span></span>
-<span class="job-period">2024 — 2025</span>      </div>
-<p>Project: B2C service for paying foreign services and subscriptions — web and a Telegram mini-app, microservices on k8s.</p><ul><li>Rebuilt the QA department: structure, processes, documentation, hiring and onboarding; once it ran on its own, handed it over and moved to the CRM project, which needed a more experienced engineer.</li><li>Tested the web app, the Telegram mini-app and the backend, including end-to-end flows across all services: payments → subscriptions and recurring payments → refunds.</li><li>Reconciled statuses and amounts between services and payment providers and covered negative scenarios.</li></ul>    </div>
-    <div class="job">
-      <div class="job-head">
-        <span><span class="job-title">QA Automation Engineer (Fullstack AQA)</span> <span class="job-company">· Nevasoft LLC</span></span>
-<span class="job-period">2024-09 — 2024</span>      </div>
-<p>Project: B2B platform for international money transfers. The only QA on the team — built testing from scratch.</p><ul><li>Built testing from scratch: process, test plans, documentation, manual and automated coverage.</li><li>Tested currency control, conversion and reconciliation of amounts between the UI and internal and external payment gateways; idempotency of retries, invoicing, REST/gRPC APIs with schema validation.</li><li>Early on found a JS injection through the UI and a rounding error that made the whole transaction fail.</li></ul>    </div>
-    <div class="job">
-      <div class="job-head">
-        <span><span class="job-title">Intern → QA Engineer</span> <span class="job-company">· Hong Kong LLC</span></span>
-<span class="job-period">2021-07 — 2024-06</span>      </div>
-<p>Grew from intern to an independent QA engineer, covering functional, integration, regression and acceptance testing of web applications in fintech and payments.</p><ul><li>Found a bug in Kafka processing logic: when one data type was loaded, the service ignored data that had already been saved.</li><li>Detected type violations in the database and forgotten debug endpoints.</li><li>Tested REST API (Postman, Swagger) and verified data in MySQL/PostgreSQL with complex SQL queries.</li><li>Localized defects from Elastic/Kibana logs and maintained test plans, test cases and bug reports in Jira, Confluence and Qase.</li></ul>    </div>
-  </section>
+<header id="top" class="hero">
+  <div class="hero-text">
+<p class="eyebrow">QA Automation Engineer · moving into AI testing</p>    <h1>Leonid Li</h1>
+<p class="lead">QA Automation Engineer with hands-on experience across fintech, payments and CRM/ERP products, setting up QA processes and test frameworks on each product. Builds regression suites in Python with pytest and Playwright (async), covers API testing and verifies final data state in SQL, and runs everything in GitLab CI with Allure reporting. Combines automation with technical leadership: interviewing, hiring and onboarding QA engineers. Moving toward AI testing and AI-driven test automation.</p>  </div>
 
-  <section>
-    <h2>Skills</h2>
-    <div class="skills">
-      <div class="group">
-        <span class="group-name">Fundamentals</span>
-        <div class="chips"><span class="chip">Python programming</span><span class="chip">API testing</span><span class="chip">SQL</span><span class="chip">Test design techniques</span></div>
-      </div>
-      <div class="group">
-        <span class="group-name">Other</span>
-        <div class="chips"><span class="chip">AI agents</span><span class="chip">Allure</span><span class="chip">Bash</span><span class="chip">FastAPI</span><span class="chip">Git</span><span class="chip">GitLab CI</span><span class="chip">Jira</span><span class="chip">Kafka</span><span class="chip">Kibana</span><span class="chip">Kotlin</span><span class="chip">Mobile testing</span><span class="chip">MySQL</span><span class="chip">PostgreSQL</span><span class="chip">Postman</span><span class="chip">React</span><span class="chip">Security testing basics</span><span class="chip">TypeScript</span></div>
-      </div>
-      <div class="group">
-        <span class="group-name">Leadership &amp; collaboration</span>
-        <div class="chips"><span class="chip">Mentoring</span><span class="chip">Technical leadership</span></div>
-      </div>
-      <div class="group">
-        <span class="group-name">Tools &amp; technologies</span>
-        <div class="chips"><span class="chip">Playwright</span><span class="chip">pytest</span><span class="chip">Docker</span></div>
-      </div>
-      <div class="group">
-        <span class="group-name">Practices &amp; processes</span>
-        <div class="chips"><span class="chip">Test data management</span></div>
-      </div>
+  <aside class="card" aria-label="Contacts">
+    <div class="who">
+      <div class="avatar" aria-hidden="true">LL</div>
+      <div><b>Leonid Li</b><span>Remote · open to relocation</span></div>
     </div>
-  </section>
+    <div class="stack">
+<a class="btn primary" href="https://github.com/long57899" target="_blank" rel="noopener">GitHub</a><a class="btn" href="https://t.me/long57899" target="_blank" rel="noopener">Telegram</a><span class="btn">57899@mail.ru</span>    </div>
+<div class="extra">Education
+· Professional retraining “Fullstack Python Developer” — Netology, 2024 (Python backend + React)
+· Advanced training “Test Automation Engineer in Python” — OTUS, 2025
+· Far Eastern State Medical University, 2016
+
+Languages
+Russian — native · English — B2 · Spanish — C1</div>  </aside>
+</header>
+
+<section class="path" aria-label="Career path">
+  <svg viewBox="0 0 1000 150" aria-hidden="true">
+    <path d="M30 118 C265 118 265 58 500 58 C735 58 735 96 970 96" fill="none" stroke="var(--trail)" stroke-width="10" stroke-linecap="round"></path>
+    <path d="M30 118 C265 118 265 58 500 58" fill="none" stroke="var(--moss)" stroke-width="3" stroke-dasharray="2 12" stroke-linecap="round"></path>
+<circle cx="30" cy="118" r="9" fill="var(--moss)"></circle><circle cx="500" cy="58" r="12" fill="var(--accent)"></circle>
+<circle cx="970" cy="96" r="9" fill="var(--surface)" stroke="var(--ahead)" stroke-width="3"></circle>
+  </svg>
+  <div class="stops" style="grid-template-columns: repeat(3, minmax(0, 1fr))">
+    <div><b>2021</b><span>Intern → QA Engineer · Hong Kong LLC</span></div>
+    <div class="now"><b>Now</b><span>QA Automation Engineer (Fullstack AQA) · Nevasoft LLC</span></div>
+<div><b>Next</b><span>AI quality engineering</span></div>  </div>
+</section>
+
+<section class="numbers" aria-label="Career path">
+<div><b>400+</b><span>UI and API tests in a framework I designed</span></div><div><b>−35–40%</b><span>regression time after the rebuild</span></div><div><b>~89%</b><span>coverage of critical scenarios</span></div><div><b>4</b><span>engineers onboarded</span></div></section>
+
+<section id="projects">
+  <h2>My projects</h2>
+  <div class="grid2">
+    <article class="project featured">
+      <h3>Waypoint</h3>
+<p>Local career navigator: builds a skill roadmap to a chosen role, finds evidence in repositories, AI-agent sessions and a resume, checks knowledge with LLM-graded quizzes and publishes this bilingual page. Every export passes an NDA check.</p><p class="tech">Python · FastAPI · SQLite · React · TypeScript · MCP · LLM · Docker</p>    </article>
+    <article class="project">
+      <h3>Grasp</h3>
+<p>Learning-by-reading service: books split into units, spaced repetition, knowledge checks with LLM grading of free-text answers; server, web client and a Kotlin Multiplatform Android app.</p><p class="tech">FastAPI · PostgreSQL · Redis · SQLAlchemy · React · Kotlin Multiplatform · LLM</p>    </article>
+    <article class="project">
+      <h3>AQA-tool</h3>
+<p>A QA engineer’s workstation with a built-in LLM agent: WebSocket streaming, action confirmation, token accounting; database and log viewers, Allure reports, scripts, interactive project map. 600+ automated tests; ruff, mypy strict and import-linter in the required checks.</p><p class="tech">FastAPI · React · TypeScript · WebSocket · Tortoise ORM · Docker</p>    </article>
+    <article class="project">
+      <h3>Governance</h3>
+<p>Portfolio manager for personal projects: roadmaps, decisions, risks and session logs; desktop app with an MCP server that AI agents work through, and an Android client with sync.</p><p class="tech">Python · React · MCP · Kotlin · Jetpack Compose</p>    </article>
+    <article class="project">
+      <h3>LangApp</h3>
+<p>Offline Android app for learning languages: language-first navigation, progress with streaks and a 12-week activity map, sections per language (EN/ZH), light and dark themes. Verified on a real device.</p><p class="tech">Kotlin · Jetpack Compose · Hilt · Room · DataStore</p>    </article>
+  </div>
+<p class="note">Code on request</p></section>
+
+<section id="work">
+  <h2>Experience</h2>
+  <div class="timeline">
+    <article class="job">
+      <div class="job-head"><h3>QA Automation Engineer (Fullstack AQA) · Nevasoft LLC</h3><span class="when">2025 — present</span></div>
+<p>Project: CRM/ERP system for taxi fleets — web and a native mobile app (Laravel, Livewire, MySQL, Redis, Kafka). Rebuilt the QA process and the regression framework.</p><ul><li>Designed a regression framework (Python, pytest, Playwright async, 4-layer Page Object): 400+ UI and API tests, each checking both the UI and the final database state; regression time dropped by 35–40%.</li><li>Automated payouts (SBP/card, integrations with several banks), financial reporting and the public API: ~89% coverage of critical scenarios with releases 1–3 times a week.</li><li>Caught critical money defects before production: duplicate charges when the connection to the payment service dropped and a missed recalculation when a background job failed on large volumes.</li><li>Set up GitLab CI runs with Allure and automatic failure diagnostics (screenshot, HTML, Playwright trace, app log) and isolated parallel QA environments (git worktree + Docker Compose).</li><li>Interviewed and hired a QA Middle and a QA Lead and onboarded 4 new employees: system training, growth plans, reviews of their work.</li></ul>    </article>
+    <article class="job">
+      <div class="job-head"><h3>QA Automation Engineer (Fullstack AQA) · Nevasoft LLC</h3><span class="when">2024 — 2025</span></div>
+<p>Project: B2C service for paying foreign services and subscriptions — web and a Telegram mini-app, microservices on k8s.</p><ul><li>Rebuilt the QA department: structure, processes, documentation, hiring and onboarding; once it ran on its own, handed it over and moved to the CRM project, which needed a more experienced engineer.</li><li>Tested the web app, the Telegram mini-app and the backend, including end-to-end flows across all services: payments → subscriptions and recurring payments → refunds.</li><li>Reconciled statuses and amounts between services and payment providers and covered negative scenarios.</li></ul>    </article>
+    <article class="job">
+      <div class="job-head"><h3>QA Automation Engineer (Fullstack AQA) · Nevasoft LLC</h3><span class="when">2024-09 — 2024</span></div>
+<p>Project: B2B platform for international money transfers. The only QA on the team — built testing from scratch.</p><ul><li>Built testing from scratch: process, test plans, documentation, manual and automated coverage.</li><li>Tested currency control, conversion and reconciliation of amounts between the UI and internal and external payment gateways; idempotency of retries, invoicing, REST/gRPC APIs with schema validation.</li><li>Early on found a JS injection through the UI and a rounding error that made the whole transaction fail.</li></ul>    </article>
+    <article class="job">
+      <div class="job-head"><h3>Intern → QA Engineer · Hong Kong LLC</h3><span class="when">2021-07 — 2024-06</span></div>
+<p>Grew from intern to an independent QA engineer, covering functional, integration, regression and acceptance testing of web applications in fintech and payments.</p><ul><li>Found a bug in Kafka processing logic: when one data type was loaded, the service ignored data that had already been saved.</li><li>Detected type violations in the database and forgotten debug endpoints.</li><li>Tested REST API (Postman, Swagger) and verified data in MySQL/PostgreSQL with complex SQL queries.</li><li>Localized defects from Elastic/Kibana logs and maintained test plans, test cases and bug reports in Jira, Confluence and Qase.</li></ul>    </article>
+  </div>
+</section>
+
+<section id="skills">
+  <h2>Skills</h2>
+  <div class="skills">
+<div><h3>Test automation</h3><p>Python programming · pytest · Playwright · API testing · Test design techniques · Test data management · Allure · Mobile testing · Security testing basics</p></div><div><h3>AI &amp; LLM</h3><p>AI agents · Prompt engineering · Model Context Protocol · LLM evaluation</p></div><div><h3>Backend &amp; data</h3><p>FastAPI · SQL · PostgreSQL · MySQL · Kafka · Redis</p></div><div><h3>Frontend &amp; mobile</h3><p>TypeScript · React · Kotlin · Jetpack Compose</p></div><div><h3>DevOps &amp; tools</h3><p>Docker · GitLab CI · GitHub Actions · Git · Bash · Kibana · Jira · Postman</p></div><div><h3>Leadership</h3><p>Technical leadership · Mentoring · Software architecture</p></div>  </div>
+</section>
 
 
-</main>
+
+<footer>
+  <span>Leonid Li · QA Automation Engineer · moving into AI testing</span>
+  <span>Made with Waypoint · <a href="#top">Back to top</a></span>
+</footer>
+
+</div>
 </body>
 </html>
