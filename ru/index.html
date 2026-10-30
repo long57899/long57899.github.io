@@ -20,13 +20,6 @@
   --display: "Unbounded", "Onest", system-ui, sans-serif; --mono: ui-monospace, "SFMono-Regular", Menlo, monospace;
   color-scheme: light;
 }
-@media (prefers-color-scheme: dark) {
-  :root { --bg: #121614; --surface: #1a1f1c; --ink: #e8ece6; --ink-2: #b6beb5; --muted: #8e978e;
-    --line: #2c332e; --line-2: #3b443e; --accent: #e8693e; --accent-strong: #c4532c;
-    --moss: #62ab80; --trail: #2b302b; --ahead: #5e675f;
-    --deep: #222a25; --deep-ink: #e8ece6; --deep-2: #b6beb5; --deep-muted: #8e978e; --deep-line: #3b443e;
-    color-scheme: dark; }
-}
 
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
@@ -68,7 +61,7 @@ h1 { margin: 0; font: 600 clamp(48px, 9vw, 84px)/0.98 var(--display); letter-spa
 .card .btn.primary { background: var(--accent-strong); border-color: var(--accent-strong); color: var(--on-accent); }
 .card .extra { border-top: 1px solid var(--deep-line); padding-top: 16px; font-size: 13.5px; color: var(--deep-2); white-space: pre-line; }
 
-/* тропа */
+/* тропа; визитка и тропа — всегда светлые, как на макете */
 .path { background: var(--surface); border: 1px solid var(--line); border-radius: 28px; padding: 32px 28px 24px; }
 .path svg { width: 100%; height: auto; display: block; }
 .stops { display: grid; gap: 12px; margin-top: 10px; font-size: 14px; }
@@ -168,14 +161,16 @@ footer { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12
 
 <section class="path" aria-label="Путь">
   <svg viewBox="0 0 1000 150" aria-hidden="true">
-    <path d="M30 118 C265 118 265 58 500 58 C735 58 735 96 970 96" fill="none" stroke="var(--trail)" stroke-width="10" stroke-linecap="round"></path>
-    <path d="M30 118 C265 118 265 58 500 58" fill="none" stroke="var(--moss)" stroke-width="3" stroke-dasharray="2 12" stroke-linecap="round"></path>
-<circle cx="30" cy="118" r="9" fill="var(--moss)"></circle><circle cx="500" cy="58" r="12" fill="var(--accent)"></circle>
-<circle cx="970" cy="96" r="9" fill="var(--surface)" stroke="var(--ahead)" stroke-width="3"></circle>
+    <path d="M30 118 C147 118 147 58 265 58 C382 58 382 96 500 96 C617 96 617 46 735 46 C852 46 852 86 970 86" fill="none" stroke="var(--trail)" stroke-width="10" stroke-linecap="round"></path>
+    <path d="M30 118 C147 118 147 58 265 58 C382 58 382 96 500 96 C617 96 617 46 735 46" fill="none" stroke="var(--moss)" stroke-width="3" stroke-dasharray="2 12" stroke-linecap="round"></path>
+<circle cx="30" cy="118" r="9" fill="var(--moss)"></circle><circle cx="265" cy="58" r="9" fill="var(--moss)"></circle><circle cx="500" cy="96" r="9" fill="var(--moss)"></circle><circle cx="735" cy="46" r="12" fill="var(--accent)"></circle>
+<circle cx="970" cy="86" r="9" fill="var(--surface)" stroke="var(--ahead)" stroke-width="3"></circle>
   </svg>
-  <div class="stops" style="grid-template-columns: repeat(3, minmax(0, 1fr))">
-    <div><b>2021</b><span>Стажёр → QA Engineer · ООО «Гонконг»</span></div>
-    <div class="now"><b>Сейчас</b><span>QA Automation Engineer (Fullstack AQA) · ООО «Невасофт»</span></div>
+  <div class="stops" style="grid-template-columns: repeat(5, minmax(0, 1fr))">
+    <div><b>2021</b><span>Финтех: от стажёра до QA</span></div>
+    <div><b>2024</b><span>B2B-переводы: QA с нуля</span></div>
+    <div><b>2024</b><span>B2C-платежи: перестроил QA</span></div>
+    <div class="now"><b>Сейчас</b><span>CRM/ERP: фреймворк и функции лида</span></div>
 <div><b>Дальше</b><span>Тестирование AI-систем</span></div>  </div>
 </section>
 
